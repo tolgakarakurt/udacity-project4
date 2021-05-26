@@ -2,7 +2,7 @@
 ### Udacity's nano degree program: Robotics Software Engineering  
 **Project Title**: Map My World?  
 **Project Goals**: 
-- Robot Localizaton using Adaptive Monte Carlo Localization Algorithms.
+- Create 2D occupancy grid and 3D octomap from a simulated environment with the RTAB-Map package.
 
 ### Requirements
 #### Dependencies:
