@@ -13,3 +13,4 @@ $ sudo apt-get install ros-kinetic-rtabmap-ros
 $ sudo apt-get install libsqlite3-dev libpcl-dev libopencv-dev git cmake libproj-dev libqt5svg5-dev
 
 ```
+**Note**: Gather [rtabmap.db here](https://drive.google.com/file/d/1JNTbnRrWtClLR8SAKnxpTy_e-f-QNBmj/view?usp=sharing)
