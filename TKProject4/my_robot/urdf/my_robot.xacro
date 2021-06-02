@@ -82,17 +82,17 @@
     <axis xyz="0 1 0" rpy="0 0 0"/>
   </joint>
 
-  <joint name="camera_optical_joint" type="fixed">
-    <origin xyz="0 0 0" rpy="-1.5707 0 -1.5707"/>
-    <parent link="camera"/>
-    <child link="camera_link_optical"/>
-  </joint>
-  
   <joint name="hokuyo_joint" type="fixed">
     <origin xyz="0.3 0 0.045" rpy="0 0 0"/>
     <child link="hokuyo"/>
     <parent link="body_part_roof"/>
     <axis xyz="0 1 0" rpy="0 0 0"/>
+  </joint>
+
+  <joint name="camera_optical_joint" type="fixed">
+    <origin xyz="0 0 0" rpy="-1.5707 0 -1.5707"/>
+    <parent link="camera"/>
+    <child link="camera_link_optical"/>
   </joint>
 
   <!--Links-->
@@ -360,7 +360,6 @@
     </visual> 
   </link>
 
-  <!--Camera-->
   <link name='camera'>
     <pose>0 0 0 0 0 0</pose>
 
