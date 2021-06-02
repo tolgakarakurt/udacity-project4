@@ -6,3 +6,8 @@
 
 ### Requirements
 #### Dependencies:
+- Install rtab-map [here](https://github.com/introlab/rtabmap/wiki/Installation#ubuntu)
+```
+$ sudo apt-get update
+$ sudo apt-get install libsqlite3-dev libpcl-dev libopencv-dev git cmake libproj-dev libqt5svg5-dev
+```
