@@ -35,7 +35,7 @@
 </gazebo>
 
   <!-- camera -->
-  <gazebo reference="camera">
+  <!--gazebo reference="camera">
     <sensor type="camera" name="camera1">
       <update_rate>30.0</update_rate>
       <camera name="head">
@@ -65,11 +65,11 @@
         <distortionT2>0.0</distortionT2>
       </plugin>
     </sensor>
-  </gazebo>
+  </gazebo-->
 
 
   <!-- RGBD Camera -->
-  <!--gazebo reference="camera">
+  <gazebo reference="camera">
     <sensor type="depth" name="camera1">
         <always_on>1</always_on>
         <update_rate>20.0</update_rate>
@@ -112,7 +112,7 @@
             <focalLength>0.0</focalLength>
             </plugin>
     </sensor>
-  </gazebo-->
+  </gazebo>
 
   <!-- hokuyo -->
   <gazebo reference="hokuyo">
