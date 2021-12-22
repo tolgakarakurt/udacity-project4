@@ -23,38 +23,41 @@ $ sudo apt-get install libsqlite3-dev libpcl-dev libopencv-dev git cmake libproj
 - Open a terminal  
 - `catkin_make`
 
-### Action
+### Mapping
 - Open a terminal
   - `roslaunch my_robot world.launch`
 - Open another terminal
-  - `roslaunch my_robot xxxx.launch`
+  - `roslaunch my_robot mapping.launch`
+- Open a terminal  
+  - `rosrun teleop_twist_keyboard teleop_twist_keyboard.py`  
 
 **Note**: Gather [rtabmap.db here](https://drive.google.com/file/d/1JNTbnRrWtClLR8SAKnxpTy_e-f-QNBmj/view?usp=sharing)  
 
 ### Package Directory
 ```
-TKProject4                         # Map My World Project
-├── my_robot                       # my_robot package   
-│   ├── config                     # map configuration files   
+TKProject4                          # Map My World Project
+├── my_robot                        # my_robot package   
+│   ├── config                      # map configuration files   
 │   │   ├── base_local_planner_params.yaml
 │   │   ├── costmap_common_params.yaml    
 │   │   ├── global_costmap_params.yaml
 │   │   ├── local_costmap_params.yaml              
-│   ├── launch                     # launch folder for launch files   
+│   ├── launch                      # launch folder for launch files   
 │   │   ├── amcl.launch
+│   │   ├── localization.launch
+│   │   ├── mapping.launch
 │   │   ├── robot_description.launch
+│   │   ├── teleop.launch
 │   │   ├── world.launch
-│   ├── maps                       # maps folder for amcl
+│   ├── maps                        # maps folder for amcl
 │   │   ├── map.pgm
 │   │   ├── map.yaml
-│   ├── meshes                     # meshes folder for sensors
+│   ├── meshes                      # meshes folder for sensors
 │   │   ├── hokuyo.dae
-│   ├── urdf                       # urdf folder for xarco files
+│   ├── urdf                        # urdf folder for xarco files
 │   │   ├── my_robot.gazebo
 │   │   ├── my_robot.xacro
-│   ├── rviz                       # rviz saved configuration file
-│   │   ├── default.rviz
-│   ├── urdf                       # robot urdf file
+│   ├── urdf                        # robot urdf file
 │   │   ├── my_robot.gazebo
 │   │   ├── my_robot.xacro
 │   ├── worlds                      # world folder for world files
